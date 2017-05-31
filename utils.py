@@ -69,7 +69,7 @@ def process_data(out, width, height):
 	area = abs((bounds[0][0][0]-bounds[0][1][0]) *(bounds[0][0][1]-bounds[0][1][1]))
 	img_center = (int(width/2), int(height/2))
 
-	# find the appropriate
+	# calculate the necessary movements
 	yaw, throt = process_center(box_center)
 	pitch = process_area(area)
 	
